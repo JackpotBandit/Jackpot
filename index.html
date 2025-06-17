@@ -1,1 +1,83 @@
-<html><head><title>Home</title></head><body><h1>Welcome to JackpotBandit</h1><nav><a href='sportsbook.html'>Sportsbook</a> | <a href='casino.html'>Casino</a> | <a href='poker.html'>Poker</a> | <a href='admin.html'>Admin</a></nav></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JackpotBandit - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a3d1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      font-size: 2em;
+      font-weight: bold;
+      color: #1a3d1f;
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    a.button {
+      padding: 15px;
+      background-color: #1a3d1f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #28a745;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+
+    @media (min-width: 600px) {
+      .button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      a.button {
+        flex: 1 0 40%;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Welcome to the Ultimate Betting Experience</header>
+
+  <div class="button-container">
+    <a class="button" href="sportsbook.html">Sportsbook</a>
+    <a class="button" href="casino.html">Live Casino</a>
+    <a class="button" href="poker.html">Poker Room</a>
+    <a class="button" href="admin.html">Admin Panel</a>
+  </div>
+
+  <footer>&copy; 2025 JackpotBandit. All rights reserved.</footer>
+</body>
+</html>
